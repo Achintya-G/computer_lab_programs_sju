@@ -21,11 +21,11 @@
 
 ## Unit 2
 
-- [ ] 1 - [Write a program in C to enter some numbers into an ARRAY. Find the sum of the numbers and display the average.](./unit_2/sumAndAverageOfArray.c)
-- [ ] 2 - [Write a program to enter some numbers into an array and find the standard deviation of those numbers.](./unit_2/stdDevOfArray.c)
-- [ ] 3 - [Write a program in C to find the sum of N natural numbers.](./unit_2/sumOfNaturalNum.c)
-- [ ] 4 - [Write a program in C to find the sum of N terms of even number series.](./unit_2/sumOfEvenNum.c)
-- [ ] 5 - [Write a program in C to find the sum of N terms of odd numbers.](./unit_2/sumOfOddNum.c)
+- [x] 1 - [Write a program in C to enter some numbers into an ARRAY. Find the sum of the numbers and display the average.](./unit_2/sumAndAverageOfArray.c)
+- [x] 2 - [Write a program to enter some numbers into an array and find the standard deviation of those numbers.](./unit_2/stdDevOfArray.c)
+- [x] 3 - [Write a program in C to find the sum of N natural numbers.](./unit_2/sumOfNaturalNum.c)
+- [x] 4 - [Write a program in C to find the sum of N terms of even number series.](./unit_2/sumOfEvenNum.c)
+- [x] 5 - [Write a program in C to find the sum of N terms of odd numbers.](./unit_2/sumOfOddNum.c)
 - [ ] 6 -
 - [ ] 7
 - [ ] 8
