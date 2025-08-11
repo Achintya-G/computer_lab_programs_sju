@@ -34,9 +34,9 @@
 
 ## Unit 3
 
-- [ ] 1 - Write a program in C to enter a number and indicate whether it is EVEN or ODD.
-- [ ] 2 - Enter some numbers into an array and list all the even numbers.
-- [ ] 3 - Write a program in C enter a number. Check if it is divisible by 5. If not display the next number which is divisible by 5.
+- [ ] 1 - [Write a program in C to enter a number and indicate whether it is EVEN or ODD.](./unit_3/evenOrOdd.c)
+- [ ] 2 - [Enter some numbers into an array and list all the even numbers.](./unit_3/evenOfArray.c)
+- [ ] 3 - [Write a program in C enter a number. Check if it is divisible by 5. If not display the next number which is divisible by 5.](./unit_3/divBy5.c)
 - [ ] 4 - Write a program in C to input reg num, name and marks in 3 subjects. Indicate whether the student has passed or failed and also whether he/she gets distinction, first class, second class or failed. Criteria: Has to get 35% in each of the subjects and 40% average to Pass. 80% and above Distinction, 60-80: First class, 50-60: Second class: ,40-50 : Third class.
 - [ ] 5 - Write a program in C to input Emp ID, Name and BASIC salary for an employee. Calculate Gross and Net salary based on HRA, DA and IT.
 - [ ] 6 - Write a function sub program in C to return the area of a triangle given the lengths of 3 sides. Use it in the main program to find the area of a triangle given the lengths of 3 sides.
