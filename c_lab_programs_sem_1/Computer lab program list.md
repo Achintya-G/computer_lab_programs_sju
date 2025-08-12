@@ -2,8 +2,8 @@
 
 ## Unit 1
 
-- [ ] 1 - Write a program in C to input length and breadth of a rectangle and find the area of the rectangle.
-- [ ] 2 - Write a program in C to find the area of a circle, given the radius.
+- [ ] 1 - [Write a program in C to input length and breadth of a rectangle and find the area of the rectangle.](./unit_1/rectArea.c)
+- [ ] 2 - [Write a program in C to find the area of a circle, given the radius.](./unit_1/cirArea.c)
 - [ ] 3 - Write a program in C to find the area of a triangle given the lengths of three sides.
 - [ ] 4 - Write a program in C to convert temp in Celsius scale to Fahrenheit scale.
 - [ ] 5 - Write a program in C to find the distance travelled by an object moving with a velocity U and acceleration a in time t.

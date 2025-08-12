@@ -10,8 +10,11 @@ rectArea.c
 
 void main(){
     float b,l,a;
+    
     printf("Enter the lenght and breadth of rectangle to find its area:\n");
     scanf("%f %f",&l,&b);
+
     a = l*b;
+
     printf("The area of the rectangle is : %f",a);
 }
