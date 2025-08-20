@@ -15,11 +15,14 @@ void main()
     scanf("%d",&n);
 
     int i=1;
+    int j=0;
 
-    while (i<=n){
-        fact = fact*((i*2)-1);
-        sum += fact;
-        printf("\n%d",fact);
+    while (j<n){
+        fact = fact*i;
+        if (i%2==1){
+            sum += fact;
+            j++;
+        }
         i++;
     }
 
