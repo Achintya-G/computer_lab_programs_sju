@@ -14,9 +14,12 @@ void main()
     printf("Enter Velocity, Acceleration of object:");
     scanf("%d %d",&u,&a);
 
-    for (int i=1;i<=5;i++){
-        float d = u*i + 0.5*a*i*i;
-        printf("Distanced travelled in %d hours is : %.2f\n",i,d);
+    printf("Time \t | Distance\n");
+    printf("---------------------\n");
+
+    for (int t=1;t<=5;t++){
+        float d = u*t + 0.5*a*t*t;
+        printf("%d \t | %.2f\n",t,d);
     }
 
 }

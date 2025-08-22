@@ -29,7 +29,7 @@
 - [x] 6 - [Write a program in C to find the factorial of a given number. Fact = 1*2*3*…..*N](./unit_2/factorialOfN.c)
 - [x] 7 - [Write a program in C to find the sum of N terms of the following series. Sum = 1!  + 2! + 3! +….. N terms](./unit_2/sumOfFactorials.c)
 - [x] 8 - [Write a program in C to find the sum of N terms of the following factorial series.Sum = 1! + 3! + 5! + …. N terms](./unit_2/sumOfOddFactorials.c)
-- [ ] 9 - Write a program in C to convert temp in Celsius scale to Fahrenheit scale for temperatures ranging from 0 to 100. Show the results in a tabular form
+- [x] 9 - [Write a program in C to convert temp in Celsius scale to Fahrenheit scale for temperatures ranging from 0 to 100. Show the results in a tabular form](./unit_2/cTofTabular.c)
 - [x] 10 - [Write a program in C to display the distance travelled by an object starting from the beginning and at the end of every hour t for the first 5 hours.](./unit_2/distTravelled.c)
 
 ## Unit 3
@@ -40,10 +40,10 @@
 - [ ] 4 - Write a program in C to input reg num, name and marks in 3 subjects. Indicate whether the student has passed or failed and also whether he/she gets distinction, first class, second class or failed. Criteria: Has to get 35% in each of the subjects and 40% average to Pass. 80% and above Distinction, 60-80: First class, 50-60: Second class: ,40-50 : Third class.
 - [ ] 5 - Write a program in C to input Emp ID, Name and BASIC salary for an employee. Calculate Gross and Net salary based on HRA, DA and IT.
 - [x] 6 - [Write a function sub program in C to return the area of a triangle given the lengths of 3 sides. Use it in the main program to find the area of a triangle given the lengths of 3 sides.](./unit_3/triAreaFunc.c)
-- [ ] 7 - Write a program in find the sum of two matrices of MxN dimensions.
-- [ ] 8 - Write a program in C to  find the product  of two matrices of dimensions MxP and PxN.
+- [x] 7 - [Write a program in find the sum of two matrices of MxN dimensions.](./unit_3/sumOfMatrix.c)
+- [x] 8 - [Write a program in C to  find the product  of two matrices of dimensions MxP and PxN.](./unit_3/productOfMatrix.c)
 - [ ] 9 - Write a program to return in C to find the sum of digits of a multi digit number.
-- [ ] 10 - Write a function sub program.
+- [x] 10 - [Write a function sub program.](./unit_3/subProgram.c)
 
 ## Unit 4
 
