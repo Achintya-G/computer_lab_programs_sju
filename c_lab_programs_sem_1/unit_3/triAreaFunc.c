@@ -25,6 +25,7 @@ void main()
 int triArea(int a,int b,int c)
 {
     float area,s;
+    
 
     s = (a+b+c)/2;
     area = sqrt(s*(s-a)*(s-b)*(s-c));

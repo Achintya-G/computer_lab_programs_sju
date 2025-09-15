@@ -38,7 +38,7 @@
 - [x] 2 - [Enter some numbers into an array and list all the even numbers.](./unit_3/evenOfArray.c)
 - [x] 3 - [Write a program in C enter a number. Check if it is divisible by 5. If not display the next number which is divisible by 5.](./unit_3/divBy5.c)
 - [ ] 4 - Write a program in C to input reg num, name and marks in 3 subjects. Indicate whether the student has passed or failed and also whether he/she gets distinction, first class, second class or failed. Criteria: Has to get 35% in each of the subjects and 40% average to Pass. 80% and above Distinction, 60-80: First class, 50-60: Second class: ,40-50 : Third class.
-- [ ] 5 - Write a program in C to input Emp ID, Name and BASIC salary for an employee. Calculate Gross and Net salary based on HRA, DA and IT.
+- [x] 5 - [Write a program in C to input Emp ID, Name and BASIC salary for an employee. Calculate Gross and Net salary based on HRA, DA and IT.](./unit_3/employee.c)
 - [x] 6 - [Write a function sub program in C to return the area of a triangle given the lengths of 3 sides. Use it in the main program to find the area of a triangle given the lengths of 3 sides.](./unit_3/triAreaFunc.c)
 - [x] 7 - [Write a program in find the sum of two matrices of MxN dimensions.](./unit_3/sumOfMatrix.c)
 - [x] 8 - [Write a program in C to  find the product  of two matrices of dimensions MxP and PxN.](./unit_3/productOfMatrix.c)
@@ -56,4 +56,4 @@
 - [ ] 7 - Write function sub programs to input, print and find the product  of two matrices of dimensions MxP and PxN.
 - [ ] 8 - Write a function sub program to return the sum of digits of a multi digit number.
 - [ ] 9 - Write a function sub program to return the maximum number in an array
-- [ ] 10 - Write function sub programs to input, print and sort (Bubble sort/Selection sort) a list of numbers in an array.
+- [x] 10 - [Write function sub programs to input, print and sort (Bubble sort) a list of numbers in an array.](./unit_4/bubblesort.c)
