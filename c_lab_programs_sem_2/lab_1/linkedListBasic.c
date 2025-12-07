@@ -54,18 +54,18 @@ void DisplayList(LISTNODE *head){
   printf("NULL\n");
 }
 void InsertNode(int num){
-  LISTNODE *Current, *Node;
-  Node = (LISTNODE *)malloc(sizeof(LISTNODE));
-  Node->Data = num;
-  Node->Next = NULL;
+    LISTNODE *Current, *Node;
+    Node = (LISTNODE *)malloc(sizeof(LISTNODE));
+    Node->Data = num;
+    Node->Next = NULL;
 
-  if(Head == NULL){
-    Head = Node;
-    return;
-  }
-  Current = Head;
-  while(Current->Next != NULL){
-    Current = Current->Next;
-  }
-  Current->Next = Node;
+    if(Head == NULL){
+      Head = Node;
+      return;
+    }
+    Current = Head;
+    while(Current->Next != NULL){
+      Current = Current->Next;
+    }
+    Current->Next = Node;
 }

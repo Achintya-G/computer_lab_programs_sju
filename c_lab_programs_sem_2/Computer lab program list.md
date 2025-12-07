@@ -7,12 +7,12 @@
 
 ## LAB 2
 
-- [ ] Write a menu driven program in C to create an ORDERED linked list with the following options.
+- [x] [Write a menu driven program in C to create an ORDERED linked list with the following options.](./lab_2/orderedListInt.c)
   - a. Insert a number
   - b. Display the list of numbers
   - c. Search for a given data item.
   - d. Delete a given number.
-- [ ] Write a menu driven program in C to create an ORDERED linked list with character string as a data item with the following options : (tip: Use strcpy() to assign the string to the Data variable in the list node and strcmp() while searching for a given string.)
+- [x] [Write a menu driven program in C to create an ORDERED linked list with character string as a data item with the following options :](./lab_2/orderedListString.c)
   - a. Insert a string
   - b. Display the string
   - c. Search for a given string.
