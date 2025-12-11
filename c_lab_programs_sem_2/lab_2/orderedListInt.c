@@ -54,11 +54,6 @@ void main (){
         }else {
             printf("Invalid Choice.\n");
         }
-        
-
-        if(choice == 0){
-            break;
-        }
     }
     printf("\nExiting\n");
 }

@@ -25,7 +25,7 @@
   - b. Display the content of the list in forward and backward by moving the forward and backward arrow.
   - c. To delete a given data item.
   - d. Exit
-- [ ] Write a menu program in C to show the working of a QUEUE with options:
+- [x] [Write a menu program in C to show the working of a QUEUE with options:](./lab_3/QueueMenu.c)
   - a. Enqueue
   - b. Dequeue
   - c. Exit
