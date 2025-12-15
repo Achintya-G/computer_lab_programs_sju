@@ -22,7 +22,7 @@ void InitList();
 void InsertNode(char *str);
 void DisplayList(LISTNODE *head);
 void SearchNode(char *str);
-int DeleteListNode(char *str);
+void DeleteListNode(char *str);
 
 void main (){
     int option;
@@ -133,12 +133,13 @@ void SearchNode(char *str){
     printf(" \"%s\" not found in list.\n", str);
 }
 
-int DeleteListNode(char *str)
+void DeleteListNode(char *str)
 {
     LISTNODE *Current, *Prev;
 
     if(Head == NULL){
-        return -1;
+        printf("List is empty\n");
+        return ;
     }
     
     // Delete from the beginning
@@ -146,7 +147,7 @@ int DeleteListNode(char *str)
         Current = Head;
         Head = Head->Next;
         free(Current);
-        return 1;
+        return ;
     }
     
     // Delete from middle or end
@@ -156,12 +157,13 @@ int DeleteListNode(char *str)
         if (strcmp(Current->Data, str) == 0){
             Prev->Next = Current->Next;
             free(Current);
-            return 1;
+            printf("'%s' deleted\n",str);
+            return ;
         }
         Prev = Current;
         Current = Current->Next;
     }
 
     printf("%s not found.\n", str);
-    return -1;
+    return ;
 }
