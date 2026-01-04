@@ -1,14 +1,13 @@
 /*
   Menu driven program for Singly Linked List Operations
   (Max, Count, Delete Specific, Delete Last)
-  Pranav
+  Achintya
   14-12-2025
-  linkedlist_ops.c
+  linkedlis.c
 */
 
 #include<stdio.h>
 #include<stdlib.h>
-#include<memory.h>
 
 typedef struct ListType {
   int Data;
@@ -27,11 +26,11 @@ void DeleteNode(int num);
 void DeleteLastNode();
 
 int main (){
-  int num, option, choice;
+  int num, option;
 
   InitList();
 
-  printf("Program to enter elements in Linked List and display it\n");
+  printf("Menu driven program for singly linked list.\n");
 
   while(1){
     printf("1.Insert Element.\n2.Display List.\n3.Find Max Value\n4.Count Nodes.\n5.Delete a specific Number\n6.Delete Last Node\n7.Exit\n:");
