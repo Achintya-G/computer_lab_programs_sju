@@ -59,12 +59,15 @@ void EnQueue(int num){
     Node->Next = NULL;
 
     if(Front == NULL){
-      Front = Node;
-      Rear = Node;
-      return;
+        Front = Node;
+        Rear = Node;
+        Rear -> Next = Front;
+        return;
     }
-    Current = Rear;
-    Current-> Next = Node;
+
+    
+    Rear -> Next = Node;
+    Node -> Next = Front;
     Rear = Node;
 }
 
@@ -89,6 +92,7 @@ int DeQueue(){
     Curr = Front;
     num = Curr -> Data;
     Front = Curr -> Next;
+    Rear->Next = Front;
     free(Curr);
     printf("%d was Removed.\n",num);
     return num;
