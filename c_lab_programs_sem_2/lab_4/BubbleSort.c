@@ -19,7 +19,7 @@ void main()
 
     printf("A menu-based program to input, print and sort (using Bubble sort) a list of integers in an array using function sub-programs.\n");
     while(1){
-        printf("1.Insert Element.\n2.Display List.\n3.Sort using bubble sort.\n4.Exit\n:");
+        printf("1.Insert Element.\n2.Display List.\n3.Sort using bubble sort.\n4.Exit\nEnter Choice: ");
         scanf("%d",&option);
         if (option == 1){
             printf("Enter a number: ");

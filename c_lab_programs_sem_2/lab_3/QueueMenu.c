@@ -8,17 +8,18 @@ QueueMenu.c
 #include<stdio.h>
 #include<stdlib.h>
 
-typedef struct CirQType{
+typedef struct QueueType{
     int Data;
-    struct CirQType *Next;
-}CirQueueNode;
+    struct QueueType *Next;
+}QueueNode;
 
 void InitQueue();
 void EnQueue(int num);
 int DeQueue();
+void DisplayQueue();
 
 
-CirQueueNode *Front,*Rear;
+QueueNode *Front,*Rear;
 
 int main()
 {
@@ -28,7 +29,7 @@ int main()
     printf("Program to show working of a Queue \n");
 
     while(1){
-        printf("1.EnQueue Element.\n2.DeQueue Element.\n3.Exit\n:");
+        printf("1.EnQueue Element.\n2.DeQueue Element.\n3.Display Queue\n4.Exit.\nEnter Choice: ");
         scanf("%d",&option);
 
         if (option == 1){
@@ -38,6 +39,8 @@ int main()
         }else if (option == 2){
             DeQueue();
         }else if (option == 3){
+            DisplayQueue();
+        }else if (option == 4){
             break;
         }else {
             printf("Invalid Choice.\n");
@@ -53,8 +56,8 @@ void InitQueue(){
 }
 
 void EnQueue(int num){
-    CirQueueNode *Current, *Node;
-    Node = (CirQueueNode *)malloc(sizeof(CirQueueNode));
+    QueueNode *Current, *Node;
+    Node = (QueueNode *)malloc(sizeof(QueueNode));
     Node->Data = num;
     Node->Next = NULL;
 
@@ -71,7 +74,7 @@ void EnQueue(int num){
 
 int DeQueue(){
     int num;
-    CirQueueNode *Curr;
+    QueueNode *Curr;
 
     if(Front == NULL){
         printf("Queue is empty\n");
@@ -94,3 +97,16 @@ int DeQueue(){
     return num;
 }
 
+void DisplayQueue(){
+    QueueNode *Current;
+    if (Front == NULL) {
+        printf("Queue is empty\n");
+        return;
+    }
+    Current = Front;
+    while (Current != NULL ) {
+        printf("%d -> ", Current->Data);
+        Current = Current->Next;
+    }
+    printf("NULL\n");
+}

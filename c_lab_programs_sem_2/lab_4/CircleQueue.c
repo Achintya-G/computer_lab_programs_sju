@@ -1,8 +1,8 @@
 /*
-Program to show implementation of queue using linked list.
+Program to show implementation of Circular queue using linked list.
 Achintya G
-11-12-25
-QueueMenu.c
+04-01-2026
+CircleQueue.c
 */
 
 #include<stdio.h>
@@ -15,7 +15,8 @@ typedef struct CirQType{
 
 void InitQueue();
 void EnQueue(int num);
-int DeQueue();
+void DeQueue();
+void DisplayQueue();
 
 
 CirQueueNode *Front,*Rear;
@@ -25,10 +26,10 @@ int main()
     int num,option;
     InitQueue();
     
-    printf("Program to show working of a Queue \n");
+    printf("Program to show working of a Circular Queue \n");
 
     while(1){
-        printf("1.EnQueue Element.\n2.DeQueue Element.\n3.Exit\n:");
+        printf("1.EnQueue Element.\n2.DeQueue Element.\n3.Display Queue.\n4.Exit.\nEnter Choice: ");
         scanf("%d",&option);
 
         if (option == 1){
@@ -38,6 +39,8 @@ int main()
         }else if (option == 2){
             DeQueue();
         }else if (option == 3){
+            DisplayQueue();
+        }else if (option == 4){
             break;
         }else {
             printf("Invalid Choice.\n");
@@ -72,13 +75,13 @@ void EnQueue(int num){
 }
 
 
-int DeQueue(){
+void DeQueue(){
     int num;
     CirQueueNode *Curr;
 
     if(Front == NULL){
         printf("Queue is empty\n");
-        return -1;
+        return ;
     }
     if(Front == Rear){
         Curr = Front;
@@ -86,7 +89,7 @@ int DeQueue(){
         Front = Rear = NULL;
         free(Curr);
         printf("%d was Removed.\n",num);
-        return num;
+        return ;
     }
     
     Curr = Front;
@@ -95,6 +98,20 @@ int DeQueue(){
     Rear->Next = Front;
     free(Curr);
     printf("%d was Removed.\n",num);
-    return num;
+    return ;
 }
 
+void DisplayQueue(){
+    CirQueueNode *Current;
+    if (Front == NULL) {
+        printf("Queue is empty\n");
+        return;
+    }
+    Current = Front;
+    while (Current->Next != Front ) {
+        printf("%d -> ", Current->Data);
+        Current = Current->Next;
+    }
+    printf("%d -> ", Current->Data);
+    printf("Front\n");
+}
