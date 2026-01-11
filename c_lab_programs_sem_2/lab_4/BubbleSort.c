@@ -12,7 +12,7 @@ void bubbleSort(int arr[], int len);
 
 
 
-void main() 
+void main()
 {
     int option, n, arr[20], len;
     len = 0;

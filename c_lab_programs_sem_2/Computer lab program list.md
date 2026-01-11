@@ -36,3 +36,12 @@
 - [x] [Write a menu program in C to show the working of a CIRCULAR QUEUE.](./lab_4/CircleQueue.c)
 - [x] [Write a C program to sort a list of integers using the Bubble Sort technique with function sub-programs for inputting the array, displaying the array, and sorting the elements.](./lab_4/BubbleSort.c)
 - [x] [Write a C program to perform Linear Search on an array of integers by using function sub-programs to read the array elements, display them, and search for a given key element.](./lab_4/LinSearch.c)
+
+## LAB 5
+
+- [x] [Write a menu driven program to show the working of a DOUBLY LINKED LIST with options:](./lab_5/doublyLinkedList.c)
+  - a) To enter a number.
+  - b) Display the content of the list in forward and backward by moving the forward and backward arrow.(Couldnt figure out arrows so made it an option)
+  - c) To delete a given data item.
+  - d) Exit.
+- [x] [Write a function sub program to SORT some numbers in an array using SELECTION SORT and use it in the main program to sort numbers in an array. ( write function sub programs to input numbers, print numbers and sort numbers).](./lab_5/SelecSort.c)
