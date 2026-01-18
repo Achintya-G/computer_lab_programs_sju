@@ -49,4 +49,4 @@
   - b) Display the content of the list in forward and backward by moving the forward and backward arrow.(Couldnt figure out arrows so made it an option)
   - c) To delete a given data item.
   - d) Exit.
-- [ ] [Write a function sub program to search for a given numbers in an array using BINARY SEARCH method. Let the function return 1 if the number is found, or else return -1. Do this using an array and also linked list.](./)
+- [x] [Write a function sub program to search for a given numbers in an array using BINARY SEARCH method. Let the function return 1 if the number is found, or else return -1. Do this using an array and also linked list.](./lab_6/binarySearch.c)
