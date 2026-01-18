@@ -1,40 +1,36 @@
 /*
   Program to show the working and implementation of Linked List
   Achintya G 
-  1-12-2025
+  18-12-2025
   linkedListBasic.c
 */
 #include<stdio.h>
 #include<stdlib.h>
 #include<conio.h>
 
-
-
 typedef struct ListType {
   int Data;
   struct ListType *Next,*Prev;
-} LISTNODE;
+} DBLLNKLISTNODE;
 
-LISTNODE *Head;
+DBLLNKLISTNODE *Head;
 
 //prototype
 void InitList();
 void InsertNode(int num);
-void DisplayForward();
-void DisplayBackward();
-void DeleteListNode(int num);
+void DisplayDoublyLinkedList();
+void DeleteNode(int num);
 
 int main (){
     int num, option;
-    LISTNODE *Curr;
+    DBLLNKLISTNODE *Curr;
     Curr = Head;
     InitList();
 
     printf("Program to enter elements in doubly Linked List and display it\n");
 
-
     while(1){
-        printf("1 - Insert Element.\n2. Delete Element.\n3. Display list in forward.\n4. Display list in backward.\n5. Exit.\nEnter Your Choice:");
+        printf("1 - Insert Element.\n2. Delete Element.\n3. Display list.\n4. Exit.\nEnter Your Choice:");
         scanf("%d",&option);
 
         if (option == 1){
@@ -44,12 +40,10 @@ int main (){
         }else if (option == 2){
             printf("Enter a number: ");
             scanf("%d", &num);
-            DeleteListNode(num);
+            DeleteNode(num);
         }else if (option == 3){
-            DisplayForward();
+            DisplayDoublyLinkedList();
         }else if (option == 4){
-            DisplayBackward();
-        }else if (option == 5){
             break;
         }else {
             printf("%d", option);
@@ -63,42 +57,32 @@ void InitList(){
   Head = NULL;
 }
 
-void DisplayForward()
+void DisplayDoublyLinkedList()
 {
-    LISTNODE *curr = Head;
+    DBLLNKLISTNODE *curr = Head, *prev;
     if (curr == NULL) {
         printf("\nList is Empty.\n");
         return;
     }
     printf("Forward: \n");
     while (curr != NULL) {
-        printf("%d ->", curr->Data);
+        printf("%d -> ", curr->Data);
+        prev = curr;
         curr = curr->Next;
     }
-    printf("\n");
-}
-
-void DisplayBackward()
-{
-    LISTNODE *curr = Head;
-    if (curr == NULL) {
-        printf("\nList is Empty.\n");
-        return;
-    }
-    /* move to tail */
-    while (curr->Next != NULL) curr = curr->Next;
+    printf("NULL \n");
     printf("Backward: \n");
-    while (curr != NULL) {
-        printf("%d  ->", curr->Data);
-        curr = curr->Prev;
+    while (prev != NULL) {
+        printf("%d -> ", prev->Data);
+        prev = prev->Prev;
     }
-    printf("\n");
+    printf("NULL \n");
 }
 
 
 void InsertNode(int num){
-    LISTNODE *Current, *Node;
-    Node = (LISTNODE *)malloc(sizeof(LISTNODE));
+    DBLLNKLISTNODE *Current, *Node;
+    Node = (DBLLNKLISTNODE *)malloc(sizeof(DBLLNKLISTNODE));
     Node->Data = num;
     Node->Prev = NULL;
     Node->Next = NULL;
@@ -115,16 +99,15 @@ void InsertNode(int num){
     Current-> Next = Node;
 }
 
-void DeleteListNode(int num)
+void DeleteNode(int num)
 {
-    LISTNODE *Current, *Prev, *nextNode;
+    DBLLNKLISTNODE *Current, *Prev, *nextNode;
 
     if(Head == NULL){
         printf("List is empty\n");
         return ;
     }
     
-    // Delete from the beginning
     if (Head->Data == num){
         Current = Head;
         Head = Head->Next;
@@ -134,8 +117,7 @@ void DeleteListNode(int num)
         }
         return ;
     }
-    
-    // Delete from middle or end
+
     Current = Head;
     Prev = NULL;
     nextNode = NULL;

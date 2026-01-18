@@ -1,14 +1,15 @@
 /*
-A menu-based program to input, print and sort (using Bubble sort) in an array using function sub-programs.
+A program to input, print and sort (Insertion sort) a list of numbers in an array.
 Achintya G
-04-01-2026
-bubbleSort.c
+11-01-26
+InsertionSort.c
 */
+
 #include <stdio.h>
 
 void inputArray(int arr[], int n);
 void printArray(int arr[], int n);
-void bubbleSort(int arr[], int n);
+void InsertionSort(int arr[], int n);
 
 void main() 
 {
@@ -22,11 +23,13 @@ void main()
     printf("Original array: ");
     printArray(arr, n);
 
-    bubbleSort(arr, n);
+    InsertionSort(arr, n);
 
     printf("Sorted array: ");
     printArray(arr, n);
+
 }
+
 
 
 void inputArray(int arr[], int n) 
@@ -44,15 +47,16 @@ void printArray(int arr[], int n)
     printf("\n");
 }
 
-void bubbleSort(int arr[], int n) 
-{
-    for(int i = 0; i < n-1; i++) {
-        for(int j = 0; j < n-i-1; j++) {
-            if(arr[j] > arr[j+1]) {
-                int temp = arr[j];
-                arr[j] = arr[j+1];
-                arr[j+1] = temp;
-            }
+
+void InsertionSort (int arr[], int n){
+    int x, i, j;
+    for(i = 1; i < n; i++){
+        x = arr[i];
+        j = i - 1;
+        while(j >= 0 && arr[j] > x){
+            arr[j+1] = arr[j];
+            j = j - 1;
         }
+        arr[j+1] = x;
     }
 }
