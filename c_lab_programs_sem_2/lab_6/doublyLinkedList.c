@@ -1,8 +1,8 @@
 /*
-  Program to show the working and implementation of Linked List
+  Menu based Program to show the working and implementation of Doubly Linked List
   Achintya G 
   18-12-2025
-  linkedListBasic.c
+  doublyLinkedList.c
 */
 #include<stdio.h>
 #include<stdlib.h>
@@ -23,14 +23,12 @@ void DeleteNode(int num);
 
 int main (){
     int num, option;
-    DBLLNKLISTNODE *Curr;
-    Curr = Head;
     InitList();
 
     printf("Program to enter elements in doubly Linked List and display it\n");
 
     while(1){
-        printf("1 - Insert Element.\n2. Delete Element.\n3. Display list.\n4. Exit.\nEnter Your Choice:");
+        printf("1. Insert Element.\n2. Delete Element.\n3. Display list.\n4. Exit.\nEnter Your Choice:");
         scanf("%d",&option);
 
         if (option == 1){
@@ -46,7 +44,6 @@ int main (){
         }else if (option == 4){
             break;
         }else {
-            printf("%d", option);
             printf("Invalid Choice.\n");
         }
     }

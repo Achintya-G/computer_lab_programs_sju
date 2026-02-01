@@ -1,5 +1,5 @@
 /*
-A program to input, print and sort (Selec sort) a list of numbers in an array.
+A program to input, print and search (Binary search) for a number in  an array.
 Achintya G
 18-01-26
 binarySearch.c
@@ -15,6 +15,8 @@ int BinarySearch(int arr[], int n, int SearchNum);
 void main() 
 {
     int n, arr[20], SearchNum, found;
+
+    printf("A program to input, print and seacrh for a number in (Binary sort) a list of numbers in an array.");
 
     printf("Enter number of elements: ");
     scanf("%d", &n);
@@ -61,10 +63,10 @@ void printArray(int arr[], int n)
     printf("\n");
 }
 
-void bubbleSort(int arr[], int len)
+void bubbleSort(int arr[], int n)
 {
-    for(int i = 0; i < len-1; i++) {
-        for(int j = 0; j < len-i-1; j++) {
+    for(int i = 0; i < n-1; i++) {
+        for(int j = 0; j < n-i-1; j++) {
             if(arr[j] > arr[j+1]) {
                 int temp = arr[j];
                 arr[j] = arr[j+1];
@@ -83,11 +85,9 @@ int BinarySearch(int arr[], int n, int SearchNum)
         mid = (low + high) / 2;
         if(SearchNum == arr[mid]){
             return 1;
-        }
-        else if (SearchNum < arr[mid]){
+        }else if (SearchNum < arr[mid]){
             high = mid - 1;
-        }
-        else{
+        }else{
             low = mid + 1;
         }
     }

@@ -50,3 +50,14 @@
   - c) To delete a given data item.
   - d) Exit.
 - [x] [Write a function sub program to search for a given numbers in an array using BINARY SEARCH method. Let the function return 1 if the number is found, or else return -1. Do this using an array and also linked list.](./lab_6/binarySearch.c)
+
+## LAB 7
+
+- [ ] [Write a menu program in C to show the working of a Binary Search Tree with options](./lab_7/bst.c)
+  - a) Insert a number.
+  - b) INORDER Traversal.
+  - c) PREORDER Traversal.
+  - d) POSTORDER Traversal.
+  - e) Display only LEAF NODES
+  - f) Search for given data item.
+  - g) Exit.
