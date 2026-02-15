@@ -141,6 +141,7 @@ void DisplayLeafNodes(TREENODE *Node)
     if(Node != NULL){
         if(Node->Left == Node->Right){
             printf("%d ", Node->Data);
+            return;
         }
         DisplayLeafNodes(Node->Left);
         DisplayLeafNodes(Node->Right);
@@ -149,23 +150,16 @@ void DisplayLeafNodes(TREENODE *Node)
 
 int SearchNum(int Num)
 {
-    TREENODE *Curr,*Prev,*Node;
-
-    Node = (TREENODE *) malloc(sizeof(TREENODE));
-    Node -> Data = Num;
-    Node -> Left = NULL;
-    Node -> Right = NULL;
+    TREENODE *Curr;
 
     if (Root == NULL){
-        Root = Node;
         return 0;
     }
 
     Curr = Root;
 
     while(Curr!=NULL){
-        Prev = Curr;
-        if (Num == Curr->Data){
+        if (Num == Curr->Data){ 
             return 1;
         }else if (Num > Curr->Data){
             Curr = Curr -> Right;

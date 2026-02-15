@@ -53,7 +53,7 @@
 
 ## LAB 7
 
-- [ ] [Write a menu program in C to show the working of a Binary Search Tree with options](./lab_7/bst.c)
+- [x] [Write a menu program in C to show the working of a Binary Search Tree with options](./lab_7/bst.c)
   - a) Insert a number.
   - b) INORDER Traversal.
   - c) PREORDER Traversal.
@@ -61,3 +61,8 @@
   - e) Display only LEAF NODES
   - f) Search for given data item.
   - g) Exit.
+
+## LAB 8
+
+- [x] [Write a function sub program to SORT a list of numbers using QUICK SORT technique.](./lab_8/quickSort.c)
+- [x] [Write a function sub program to SORT a list of numbers using MERGE SORT technique.](./lab_8/mergeSort.c)
